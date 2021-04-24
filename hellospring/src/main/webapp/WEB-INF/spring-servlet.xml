@@ -18,4 +18,18 @@
 	</context:annotation-config>
 	-->
 	
+	<!--  Non Annotation 방식
+				객체를 수동으로 등록 -->
+	<!-- bean id="naController" 
+		class="com.example.hellospring.controllers.NonAnnotationController" />
+	
+	<bean id="urlMapping"
+		class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="mappings">
+			<props>
+				<prop key="/na">naController</prop>
+			</props>
+		</property>
+		</bean-->
+	
 </beans>
